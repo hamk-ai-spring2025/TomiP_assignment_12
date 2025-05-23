@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-LLM Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Multi-LLM Chat</h2>
+            <div class="model-selector">
+                <label for="llm-select">Choose LLM:</label>
+                <select id="llm-select">
+                    <option value="openai_gpt-3.5-turbo">OpenAI GPT-3.5 Turbo</option>
+                    <option value="anthropic_claude-3-haiku">Anthropic Claude 3 Haiku</option>
+                    <!-- Add more <option> elements for other models if you map them in main.py -->
+                    <!-- e.g., <option value="anthropic_claude-3-sonnet">Anthropic Claude 3 Sonnet</option> -->
+                </select>
+            </div>
+        </div>
+        <div id="chat-box" class="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
